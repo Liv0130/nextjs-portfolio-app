@@ -10,7 +10,7 @@ const items = [
 
 export function HomeLinks() {
   return (
-    <ul className="space-y-6 sm:space-y-7 md:space-y-8">
+    <ul className="space-y-10 sm:space-y-7 md:space-y-8">
       {items.map((i) => (
         <li key={i.label}>
           {i.external ? (
@@ -18,6 +18,7 @@ export function HomeLinks() {
               href={i.href}
               target="_blank"
               rel="noreferrer noopener"
+              // hover effect should be fixed
               className="display-font text-4xl font-light tracking-wide transition-opacity hover:opacity-80 sm:text-6xl md:text-7xl"
             >
               {i.label}

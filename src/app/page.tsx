@@ -1,16 +1,23 @@
 import { LeftRail } from "@/components/layout/LeftRail";
-import { Ribbon } from "@/components/hero/Ribbon";
 import { HomeLinks } from "@/components/sections/HomeLinks";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className="min-h-dvh bg-[#EFE9E2] text-neutral-900">
+    <div className="min-h-dvh text-neutral-900 lg:flex-col">
       <LeftRail />
-      <div className="pl-0 lg:pl-20">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 pt-28 md:grid-cols-[360px,1fr] md:gap-16 lg:pt-32">
-          <div className="space-y-6">
-            <Ribbon />
-            <div className="space-y-2">
+      <div className="h-screen pl-0 lg:pl-20">
+        <div className="mx-auto flex max-w-7xl gap-20 px-6">
+          <div className="relative h-[300px] w-80 w-[200px] flex-col space-y-6">
+            <Image
+              src="/bookmark_ribbon.png"
+              alt="Bookmark ribbon"
+              width={200}
+              height={300}
+              className="object-fit top-0 h-[300px] w-[200px]"
+              priority
+            />
+            <div className="space-y-2 pt-22">
               <h2 className="text-sm font-semibold tracking-wide">
                 OLIVIA WITT
               </h2>
@@ -31,7 +38,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="flex items-start md:items-center">
+          <div className="flex h-screen flex-1 items-center justify-center">
             <HomeLinks />
           </div>
         </div>

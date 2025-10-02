@@ -10,7 +10,7 @@ const links = [
 export function LeftRail() {
   return (
     <aside className="fixed top-0 left-0 hidden h-screen w-20 shrink-0 flex-col items-center justify-between border-0 pt-35 pb-25 lg:flex">
-      <nav className="flex rotate-[-90deg] flex-row gap-8 text-[13px] tracking-widest text-fg font-medium uppercase">
+      <nav className="text-fg flex flex-row gap-8 text-[13px] font-medium tracking-widest uppercase sm:rotate-[0deg] md:rotate-[-90deg]">
         {links.map((l) => (
           <Link
             key={l.href}
@@ -21,8 +21,8 @@ export function LeftRail() {
           </Link>
         ))}
       </nav>
-      <div className="h-60 w-[0.7px] bg-fg"/>
-      <div className="-rotate-90 text-[15px] text-fg font-medium">
+      <div className="bg-fg h-40 w-[0.7px]" />
+      <div className="text-fg -rotate-90 text-[15px] font-medium">
         © {new Date().getFullYear()}
       </div>
     </aside>
