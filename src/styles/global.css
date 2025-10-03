@@ -13,6 +13,9 @@
   --color-fg: #000000;
   --color-bg-2: #1a1818;
   --color-fg-on-dark: #ffffff;
+
+  /* gap */
+  --breakpoint-ribbon: 1350px;
 }
 
 /* Global defaults */

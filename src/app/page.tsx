@@ -7,17 +7,17 @@ export default function HomePage() {
     <div className="min-h-dvh text-neutral-900 lg:flex-col">
       <LeftRail />
       <div className="h-screen pl-0 lg:pl-20">
-        <div className="mx-auto flex max-w-7xl gap-20 px-6">
-          <div className="relative h-[300px] w-80 w-[200px] flex-col space-y-6">
+        <div className="ribbon:mx-auto ribbon:max-w-7xl ribbon:gap-20 ribbon:px-6 ribbon:flex-row flex flex-col">
+          <div className="ribbon:w-[200px] medium:justify-center relative flex h-[300px] w-[90%] flex-col items-center space-y-6">
             <Image
               src="/bookmark_ribbon.png"
               alt="Bookmark ribbon"
               width={200}
               height={300}
-              className="object-fit top-0 h-[300px] w-[200px]"
+              className="object-fit ribbon:block top-0 hidden h-[300px] w-[200px]"
               priority
             />
-            <div className="space-y-2 pt-22">
+            <div className="items-center justify-center space-y-2 md:pt-22">
               <h2 className="text-sm font-semibold tracking-wide">
                 OLIVIA WITT
               </h2>
@@ -38,7 +38,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="flex h-screen flex-1 items-center justify-center">
+          <div className="ribbon:h-screen flex flex-1 items-center justify-center">
             <HomeLinks />
           </div>
         </div>
