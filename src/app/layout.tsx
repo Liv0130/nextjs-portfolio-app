@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "@/styles/global.css";
 import { Tenor_Sans, Montserrat } from "next/font/google";
+import { LeftRail } from "@/components/layout/LeftRail";
 
 export const metadata: Metadata = {
   title: "Olivia — Portfolio",
@@ -19,10 +20,17 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${tenor.variable} ${montserrat.variable}`}>
-      <body>{children}</body>
+      <body>
+        <LeftRail />
+        <div>{children}</div>
+      </body>
     </html>
   );
 }
