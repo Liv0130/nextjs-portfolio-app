@@ -1,32 +1,36 @@
+"use client";
 import { LeftRail } from "@/components/layout/LeftRail";
 import { HomeLinks } from "@/components/sections/HomeLinks";
 import Image from "next/image";
+import { useWindowSizeTrigger } from "@/hooks/useWindowSizeTrigger";
 
 export default function HomePage() {
+  const resizeKey = useWindowSizeTrigger();
   return (
-    <div className="min-h-dvh text-neutral-900 lg:flex-col">
+    <div className="min-h-svh text-neutral-900">
       <LeftRail />
-      <div className="h-screen pl-0 lg:pl-20">
-        <div className="ribbon:mx-auto ribbon:max-w-7xl ribbon:gap-20 ribbon:px-6 ribbon:flex-row flex flex-col">
-          <div className="ribbon:w-[200px] medium:justify-center relative flex h-[300px] w-[90%] flex-col items-center space-y-6">
+      <main className="pl-0 md:pl-20">
+        <section className="ribbon:pr-10 ribbon:pl-40 grid grid-cols-1 items-center gap-10 px-20 md:min-h-svh md:pt-50 lg:grid-cols-3 lg:pt-0">
+          <div className="ribbon:items-start relative flex flex-col justify-center md:gap-4 lg:w-30">
             <Image
+              key={resizeKey}
               src="/bookmark_ribbon.png"
               alt="Bookmark ribbon"
               width={200}
-              height={300}
-              className="object-fit ribbon:block top-0 hidden h-[300px] w-[200px]"
+              height={200}
+              className="ribbon:block ribbon:fixed ribbon:top-0 animate-ribbon-drop hidden h-115 w-70"
               priority
             />
-            <div className="items-center justify-center space-y-2 md:pt-22">
-              <h2 className="text-sm font-semibold tracking-wide">
+            <div className="ribbon:w-80 ribbon:pt-120 w-90vw lg:w-70 2xl:w-105">
+              <h2 className="mb-4 text-[clamp(1rem,1.4vw,1.15rem)] font-medium tracking-widest">
                 OLIVIA WITT
               </h2>
-              <p className="text-sm leading-relaxed text-neutral-600">
-                Software Developer / JavaScript Developer / Full‑Stack
+              <p className="mb-4 text-[clamp(0.85rem,1.25vw,0.95rem)] leading-relaxed font-normal tracking-wider">
+                Software Developer / JavaScript Developer / Full-Stack
                 Enthusiast
               </p>
-              <p className="text-sm leading-relaxed text-neutral-600">
-                Currently working full‑time as a Software Developer at{" "}
+              <p className="mb-4 text-[clamp(0.85rem,1.25vw,0.95rem)] leading-relaxed font-normal tracking-wider">
+                Currently working full-time as a Software Developer at{" "}
                 <a
                   className="underline"
                   href="https://www.sarsys-asft.com/"
@@ -37,12 +41,11 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-
-          <div className="ribbon:h-screen flex flex-1 items-center justify-center">
+          <div className="justify-items-start">
             <HomeLinks />
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 }
