@@ -4,11 +4,13 @@ import { useEffect, useState } from "react";
 type Props = {
   durationMs?: number;
   bgClassName?: string;
+  animationClassName?: string;
 };
 
 export function PageReveal({
   durationMs = 800,
   bgClassName = "bg-bg-2",
+  animationClassName = "animate-reveal-up",
 }: Props) {
   const [visible, setVisible] = useState(true);
 
@@ -22,10 +24,9 @@ export function PageReveal({
   return (
     <div
       className={[
-        "fixed inset-0 z-[160]",
+        "pointer-events-none fixed inset-0 z-[160]",
         bgClassName,
-        "animate-reveal-up",
-        "pointer-events-none",
+        animationClassName,
       ].join(" ")}
       aria-hidden
     />

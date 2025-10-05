@@ -15,7 +15,7 @@ export default function WorkPageClient() {
   return (
     <main className="bg-bg-2 relative min-h-svh px-30 py-14 lg:flex lg:items-center lg:justify-center lg:px-15">
       {showBrightCover && <div className="bg-bg fixed inset-0 z-[100]" />}
-      <PageReveal durationMs={600} bgClassName="bg-bg-2" />
+      <PageReveal durationMs={400} bgClassName="bg-bg-2" />
       <div className="animate-page-fade opacity-0 [animation-delay:300ms]">
         <IntroBlock
           variant="dark"

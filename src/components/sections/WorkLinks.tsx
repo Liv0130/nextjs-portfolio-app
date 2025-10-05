@@ -2,19 +2,23 @@ import Link from "next/link";
 
 const items = [
   {
-    href: "/t2go",
+    href: "/work/t2go",
     label: "T2GO",
     smallItem: "-FULL-STACK DEVELOPMENT",
     isNew: true,
   },
-  { href: "/falcon", label: "FALCON", smallItem: "-FULL-STACK DEVELOPMENT" },
   {
-    href: "/greencarlane",
+    href: "/work/falcon",
+    label: "FALCON",
+    smallItem: "-FULL-STACK DEVELOPMENT",
+  },
+  {
+    href: "/work/greencarlane",
     label: "GREENCAR LANE",
     smallItem: "-FRONTEND DEVELOPMENT",
   },
   {
-    href: "/trialbee",
+    href: "/work/trialbee",
     label: "TRIALBEE HONEY",
     smallItem: "-QUALITY ASSURANCE & E2E TEST AUTOMATION",
   },

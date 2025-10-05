@@ -30,7 +30,7 @@ export function IntroBlock({
   const ribbonPadding = hasRibbon ? "ribbon:pt-105" : "ribbon:pt-20";
   const fixedPosition = fixed ? "lg:fixed lg:left-30 lg:bottom-15" : "relative";
   const upAnimation = animationUp
-    ? "animate-float-up [animation-delay:450ms]"
+    ? "animate-float-up [animation-delay:500ms]"
     : "animate-float-down";
 
   return (
