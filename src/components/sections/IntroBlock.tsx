@@ -10,6 +10,7 @@ type Props = {
   roleLine2?: string;
   companyName?: string;
   companyHref?: string;
+  animationUp?: boolean;
 };
 
 export function IntroBlock({
@@ -22,11 +23,15 @@ export function IntroBlock({
   roleLine2 = "Currently working full-time as a Software Developer at ",
   companyName = "Sarsys AB",
   companyHref = "https://www.sarsys-asft.com/",
+  animationUp = false,
 }: Props) {
   const textColor = variant === "dark" ? "text-fg-on-dark" : "text-fg";
   const subText = variant === "dark" ? "text-neutral-200" : "text-neutral-700";
-  const ribbonPadding = hasRibbon ? "ribbon:pt-120" : "ribbon:pt-20";
+  const ribbonPadding = hasRibbon ? "ribbon:pt-105" : "ribbon:pt-20";
   const fixedPosition = fixed ? "lg:fixed lg:left-30 lg:bottom-15" : "relative";
+  const upAnimation = animationUp
+    ? "animate-float-up [animation-delay:450ms]"
+    : "animate-float-down";
 
   return (
     <div
@@ -34,6 +39,7 @@ export function IntroBlock({
         "ribbon:w-80 w-90vw lg:w-70 2xl:w-105",
         ribbonPadding,
         fixedPosition,
+        upAnimation,
         className,
       ].join(" ")}
     >

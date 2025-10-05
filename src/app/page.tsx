@@ -12,7 +12,7 @@ export default function HomePage() {
             <BookmarkRibbon />
             <IntroBlock variant="light" hasRibbon />
           </div>
-          <div className="justify-items-start">
+          <div className="animate-float-down justify-items-start">
             <HomeLinks />
           </div>
         </section>
