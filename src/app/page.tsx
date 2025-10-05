@@ -9,7 +9,7 @@ export default function HomePage() {
   const [showBrightCover, setShowBrightCover] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setShowBrightCover(false), 500);
+    const timeout = setTimeout(() => setShowBrightCover(false), 400);
     return () => clearTimeout(timeout);
   }, []);
 
@@ -22,14 +22,14 @@ export default function HomePage() {
         bgClassName="bg-bg"
         animationClassName="animate-reveal-down"
       />
-      <div className="bg-bg animate-page-fade opacity-0 [animation-delay:400ms]">
-        <main className="animate-float-up pl-0 [animation-delay:600ms] md:pl-20">
+      <div className="bg-bg animate-page-fade opacity-0 [animation-delay:300ms]">
+        <main className="animate-float-up pl-0 [animation-delay:450ms] md:pl-20">
           <section className="ribbon:pr-10 ribbon:pl-40 grid grid-cols-1 items-center gap-10 px-20 md:min-h-svh md:pt-50 lg:grid-cols-3 lg:pt-0">
             <div className="ribbon:items-start relative flex flex-col justify-center md:gap-4 lg:w-30">
               <BookmarkRibbon />
               <IntroBlock variant="light" hasRibbon />
             </div>
-            <div className="animate-float-up justify-items-start [animation-delay:600ms]">
+            <div className="animate-float-up justify-items-start [animation-delay:450ms]">
               <HomeLinks />
             </div>
           </section>
