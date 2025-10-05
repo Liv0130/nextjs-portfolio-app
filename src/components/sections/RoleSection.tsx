@@ -1,9 +1,14 @@
 "use client";
 
+import Link from "next/link";
+
 type RoleItem = {
   title: string;
-  content: string;
+  content?: string;
   className?: string;
+  link?: string;
+  shortLink?: boolean;
+  extraShortLink?: boolean;
 };
 
 type Props = {
@@ -22,6 +27,22 @@ export function RoleSection({ items }: Props) {
             {item.title}
           </span>
           <p className="my-3 leading-relaxed tracking-wider">{item.content}</p>
+          {item.link && (
+            <Link
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`relative inline-block font-normal text-neutral-900 after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] ${
+                item.shortLink
+                  ? "after:w-[82%]"
+                  : item.extraShortLink
+                    ? "after:w-[65%]"
+                    : "after:w-[96%]"
+              } after:bg-neutral-900 after:opacity-0 after:transition-opacity after:duration-500 hover:text-neutral-700 hover:after:opacity-100`}
+            >
+              {item.link}
+            </Link>
+          )}
         </div>
       ))}
     </div>

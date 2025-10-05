@@ -1,6 +1,8 @@
 import { RoleSection } from "@/components/sections/RoleSection";
 import { ImageBlock } from "@/components/sections/ImageBlock";
 import { HighlightText } from "@/components/sections/HighlightText";
+import { TextBlock } from "@/components/sections/TextBlock";
+import Link from "next/link";
 
 export const metadata = { title: "T2GO — Olivia" };
 
@@ -13,7 +15,7 @@ export default async function T2goPage() {
         </h1>
       </div>
       <div className="h-auto w-4/5 pt-40 pb-30">
-        <p className="display-font mx-auto px-2 text-justify text-[clamp(2rem,3.5vw,4rem)]">
+        <p className="display-font mx-auto px-3 text-left text-[clamp(2rem,3.5vw,4rem)]">
           Software I developed for Sarsys-ASFT’s T2Go, a Raspberry Pi–based
           system that collects friction data from sensors for use in both
           airports and industrial environments.
@@ -33,8 +35,7 @@ export default async function T2goPage() {
             },
             {
               title: "URL",
-              content:
-                "https://www.sarsys-asft.com/products/sarsys-friction-tester-evito",
+              link: "https://www.sarsys-asft.com/products/t2go",
               className: "ml-8 w-4/5 mr-5",
             },
           ]}
@@ -55,14 +56,14 @@ export default async function T2goPage() {
           alt="T2go phone image"
           text="Development was iterative and continuous — we rolled out new features while the system was already in production, constantly refining based on team and customer feedback."
         />
-        <p className="max-w-5xl px-15 pt-5 pb-10 text-justify leading-relaxed tracking-wider">
+        <TextBlock>
           My role covered full-stack development: Frontend (Vue.js, TypeScript),
           Backend (GraphQL APIs, Azure, SQL), and real-time communication
           (WebSockets & GraphQL subscriptions). Beyond coding, I helped bridge
           the gap between technical architecture and user needs, ensuring the
           T2Go system became both technically robust and easy to operate in the
           field.
-        </p>
+        </TextBlock>
         <ImageBlock src="/t2.png" alt="T2go model image" shadow />
         <HighlightText>
           One of the most rewarding outcomes of this project was seeing how the
@@ -82,6 +83,20 @@ export default async function T2goPage() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+          </div>
+        </div>
+        <div className="mx-auto w-1/2 pt-10">
+          <p className="font-display text-center text-[clamp(2rem,4vw,4rem)]">
+            Check it out
+          </p>
+          <div className="flex justify-center pt-4">
+            <Link
+              href="https://www.sarsys-asft.com/products/t2go"
+              target="_blank"
+              className="font-display inline-block rounded-full bg-neutral-900 px-15 py-1 text-[clamp(2rem,3.3vw,3.3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
+            >
+              T2GO
+            </Link>
           </div>
         </div>
       </div>
