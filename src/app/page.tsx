@@ -10,7 +10,7 @@ export default function HomePage() {
         <section className="ribbon:pr-10 ribbon:pl-40 grid grid-cols-1 items-center gap-10 px-20 md:min-h-svh md:pt-50 lg:grid-cols-3 lg:pt-0">
           <div className="ribbon:items-start relative flex flex-col justify-center md:gap-4 lg:w-30">
             <BookmarkRibbon />
-            <IntroBlock variant="light" />
+            <IntroBlock variant="light" hasRibbon />
           </div>
           <div className="justify-items-start">
             <HomeLinks />

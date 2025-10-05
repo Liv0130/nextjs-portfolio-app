@@ -3,16 +3,18 @@ import Link from "next/link";
 const items = [
   { href: "/work", label: "WORK" },
   { href: "/about", label: "ABOUT" },
-  { href: "/archive", label: "ARCHIVE" },
-  // to do: remove github
+  {
+    href: "https://0livia.notion.site/3cd867cf47e54095a8b6f8ad47b3ccec?v=c6ce16ab7d994ff9a6c3046b75043afe",
+    label: "ARCHIVE",
+    external: true,
+  },
   { href: "https://github.com/Liv0130", label: "GITHUB", external: true },
   { href: "/contact", label: "CONTACT" },
 ];
 
 const linkCls =
-  "display-font block leading-[0.85] text-[clamp(5rem,9vw,10rem)] " +
+  "display-font block leading-[0.85] text-[clamp(5rem,8.6vw,9rem)] " +
   "transition-transform duration-200 ease-out origin-left " +
-  "decoration-2 underline-offset-8 decoration-current " +
   "!border-0 !p-0 rounded-none hover:opacity-60 " +
   "motion-safe:hover:-rotate-4 focus:outline-none";
 
