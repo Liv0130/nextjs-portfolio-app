@@ -2,7 +2,7 @@ import { RoleSection } from "@/components/sections/RoleSection";
 import { ImageBlock } from "@/components/sections/ImageBlock";
 import { HighlightText } from "@/components/sections/HighlightText";
 import { TextBlock } from "@/components/sections/TextBlock";
-import Link from "next/link";
+import { ButtonBlock } from "@/components/sections/ButtonBlock";
 
 export const metadata = { title: "Falcon — Olivia" };
 
@@ -99,20 +99,12 @@ export default async function FalconPage() {
             ></iframe>
           </div>
         </div>
-        <div className="mx-auto w-1/2 pt-10">
-          <p className="font-display text-center text-[clamp(2rem,4vw,4rem)]">
-            Check it out
-          </p>
-          <div className="flex justify-center pt-4">
-            <Link
-              href="https://www.sarsys-asft.com/products/sarsys-friction-tester-evito"
-              target="_blank"
-              className="font-display inline-block rounded-full bg-neutral-900 px-15 py-1 text-[clamp(2rem,3.3vw,3.3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
-            >
-              FALCON
-            </Link>
-          </div>
-        </div>
+        <ButtonBlock
+          label="Check it out"
+          target="_blank"
+          href="https://www.sarsys-asft.com/products/sarsys-friction-tester-evito"
+          text="FALCON"
+        />
       </div>
     </main>
   );

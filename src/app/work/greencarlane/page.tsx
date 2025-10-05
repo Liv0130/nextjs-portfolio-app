@@ -2,8 +2,8 @@ import { RoleSection } from "@/components/sections/RoleSection";
 import { ImageBlock } from "@/components/sections/ImageBlock";
 import { HighlightText } from "@/components/sections/HighlightText";
 import { TextBlock } from "@/components/sections/TextBlock";
+import { ButtonBlock } from "@/components/sections/ButtonBlock";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata = { title: "Greencarlane — Olivia" };
 
@@ -99,20 +99,12 @@ export default async function GreencarlanePage() {
           could contribute meaningfully to projects that aim to make the world a
           little better.
         </HighlightText>
-        <div className="mx-auto w-1/2 pt-10">
-          <p className="font-display text-center text-[clamp(2rem,4vw,4rem)]">
-            Check it out
-          </p>
-          <div className="flex justify-center pt-4">
-            <Link
-              href="https://greencarlane.com/"
-              target="_blank"
-              className="font-display inline-block rounded-full bg-neutral-900 px-15 py-1 text-[clamp(2rem,3.3vw,3.3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
-            >
-              GREENCARLANE
-            </Link>
-          </div>
-        </div>
+        <ButtonBlock
+          label="Check it out"
+          href="https://greencarlane.com/"
+          text="GREENCARLANE"
+          target="_blank"
+        />
       </div>
     </main>
   );
