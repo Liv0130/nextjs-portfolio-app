@@ -93,7 +93,7 @@ Each push to the main branch triggers an automatic redeploy.
 Olivia Witt
 Frontend Developer based in Malmö, Sweden
 
-🌐 [Portfolio Website](https://your-vercel-url.vercel.app)  
+🌐 [Portfolio Website](https://nextjs-portfolio-app-kappa.vercel.app/)  
 💼 [LinkedIn](https://linkedin.com/in/oliviawittyj)  
 🐙 [GitHub](https://github.com/Liv0130)
 
