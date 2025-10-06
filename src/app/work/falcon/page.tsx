@@ -9,12 +9,12 @@ export const metadata = { title: "Falcon — Olivia" };
 export default async function FalconPage() {
   return (
     <main className="mx-auto flex min-h-screen flex-col items-center justify-start md:px-20">
-      <div className="animate-reveal-down bg-bg-2 flex h-[750px] w-full flex-col items-center justify-end lg:w-4/5">
-        <h1 className="animate-float-up display-font text-fg-on-dark text-[clamp(8rem,13vw,13rem)] tracking-[.05em] [animation-delay:600ms] lg:text-[clamp(9rem,14vw,14rem)]">
+      <div className="animate-reveal-down bg-bg-2 xs:h-[750px] xs:justify-end flex h-[600px] w-full flex-col items-center justify-center lg:w-4/5">
+        <h1 className="animate-float-up display-font text-fg-on-dark xs:text-[clamp(8rem,13vw,13rem)] text-[clamp(5.5rem,8vw,9rem)] tracking-[.03em] [animation-delay:600ms] lg:text-[clamp(9rem,14vw,14rem)]">
           FALCON
         </h1>
       </div>
-      <div className="h-auto w-4/5 pt-40 pb-30">
+      <div className="xs:pt-40 h-auto w-4/5 pt-20 pb-30">
         <p className="display-font mx-auto text-left text-[clamp(2rem,3.5vw,4rem)] lg:px-3">
           Software I developed for Sarsys-ASFT’s Falcon, a PLC-based system with
           advanced rules and laser integration to measure runway friction and
@@ -47,7 +47,7 @@ export default async function FalconPage() {
           loop
           muted
           playsInline
-          className="mx-auto mt-40 mb-20 w-full max-w-5xl overflow-hidden rounded-xl shadow-lg"
+          className="xs:mt-40 mx-auto mt-20 mb-20 w-full max-w-5xl overflow-hidden rounded-xl shadow-lg"
         ></video>
         <TextBlock>
           Falcon is Sarsys-ASFT’s flagship friction tester, installed in
@@ -56,7 +56,7 @@ export default async function FalconPage() {
           sensors and lasers to capture both runway friction values and surface
           status depending on weather conditions.
         </TextBlock>
-        <TextBlock className="pb-10">
+        <TextBlock className="xs:pb-10">
           My role in the project was full-stack development, and the process was
           highly hands-on. Each time we improved the software, we would install
           the new build directly into the Falcon car and test it on-site. This

@@ -73,7 +73,7 @@ export function LeftRail() {
         )}
       </nav>
       <div
-        className={`${dividerColor} ${dividerHeight} w-40 md:h-30 md:w-[0.7px]`}
+        className={`${dividerColor} ${dividerHeight} xs:w-40 w-0 md:h-30 md:w-[0.7px]`}
       />
       <div
         className={`${textColor} flex text-[14px] font-normal tracking-widest md:w-19 md:rotate-[-90deg]`}

@@ -17,7 +17,7 @@ type Props = {
 
 export function RoleSection({ items }: Props) {
   return (
-    <div className="my-20 flex flex-col items-start justify-stretch gap-10 lg:flex-row">
+    <div className="xs:my-20 my-10 flex flex-col items-start justify-stretch gap-10 lg:flex-row">
       {items.map((item, i) => (
         <div
           key={i}

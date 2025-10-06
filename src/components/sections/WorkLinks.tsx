@@ -25,7 +25,7 @@ const items = [
 ];
 
 const linkCls =
-  "text-fg-on-dark display-font block leading-[1] text-[clamp(4rem,6.5vw,7rem)] " +
+  "text-fg-on-dark display-font block leading-[1] text-[clamp(3rem,4vw,5rem)] xs:text-[clamp(4rem,6.5vw,7rem)] " +
   "[--slant:0deg] hover:[--slant:-12deg] " +
   "[transform:skewX(var(--slant))] " +
   "transition-[opacity,transform,letter-spacing] duration-300 ease-out " +
@@ -34,7 +34,7 @@ const linkCls =
 
 export function WorkLinks() {
   return (
-    <ul className="w-80 space-y-10 text-wrap sm:space-y-7 md:space-y-8 lg:ml-65 lg:w-100 xl:ml-60">
+    <ul className="mt-10 w-80 space-y-10 text-wrap sm:mt-0 sm:space-y-7 md:space-y-8 lg:ml-65 lg:w-100 xl:ml-60">
       {items.map((i) => (
         <li key={i.label}>
           <Link

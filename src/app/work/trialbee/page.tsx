@@ -10,12 +10,12 @@ export const metadata = { title: "Trialbee — Olivia" };
 export default async function T2goPage() {
   return (
     <main className="mx-auto flex min-h-screen flex-col items-center justify-start md:px-20">
-      <div className="animate-reveal-down bg-bg-2 flex h-[750px] w-full flex-col items-center justify-end lg:w-4/5">
-        <h1 className="animate-float-up display-font text-fg-on-dark w-6/7 text-center text-[clamp(8rem,13vw,13rem)] leading-[1] tracking-[.05em] text-balance [animation-delay:600ms] lg:w-3/4 lg:text-[clamp(9rem,14vw,14rem)]">
+      <div className="animate-reveal-down bg-bg-2 xs:h-[750px] xs:justify-end flex h-[600px] w-full flex-col items-center justify-center lg:w-4/5">
+        <h1 className="animate-float-up display-font text-fg-on-dark xs:text-[clamp(8rem,13vw,13rem)] w-6/7 text-center text-[clamp(5rem,8vw,9rem)] leading-[1] tracking-[.05em] text-balance [animation-delay:600ms] lg:w-3/4 lg:text-[clamp(9rem,14vw,14rem)]">
           TRIAL BEE HONEY
         </h1>
       </div>
-      <div className="h-auto w-4/5 pt-40 pb-30">
+      <div className="xs:pt-40 h-auto w-4/5 pt-20 pb-30">
         <p className="display-font mx-auto text-left text-[clamp(2rem,3.5vw,4rem)] lg:px-3">
           E2E test automation I implemented at Trialbee using Cypress for their
           Honey platform, ensuring daily stability as new features were deployed

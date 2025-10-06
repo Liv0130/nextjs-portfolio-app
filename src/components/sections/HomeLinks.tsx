@@ -13,7 +13,7 @@ const items = [
 ];
 
 const linkCls =
-  "display-font block leading-[0.85] text-[clamp(5rem,8.6vw,9rem)] " +
+  "display-font block leading-[0.85] text-[clamp(3.5rem,6vw,7rem)] xs:text-[clamp(5rem,8.6vw,9rem)] " +
   "transition-transform duration-200 ease-out origin-left " +
   "!border-0 !p-0 rounded-none hover:opacity-60 " +
   "motion-safe:hover:-rotate-4 focus:outline-none";

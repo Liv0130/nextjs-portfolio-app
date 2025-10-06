@@ -17,6 +17,7 @@
 
   /* gap */
   --breakpoint-ribbon: 1250px;
+  --breakpoint-xs: 550px;
 
   @keyframes ribbonDrop {
     0% {
@@ -50,7 +51,6 @@
       transform: translateY(0%);
     }
   }
-
   --animate-ribbon-drop: ribbonDrop 1.8s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
 
   /* when page changes */

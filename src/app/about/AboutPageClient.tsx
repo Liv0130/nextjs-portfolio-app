@@ -4,7 +4,6 @@ import { PageReveal } from "@/components/fx/PageReveal";
 import { TextBlock } from "@/components/sections/TextBlock";
 import { StickyCTA } from "@/components/fx/StickyCTA";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function AboutPageClient() {
   const [showDarkCover, setShowDarkCover] = useState(true);
@@ -15,17 +14,17 @@ export default function AboutPageClient() {
   }, []);
 
   return (
-    <main className="bg-bg align-center relative flex min-h-svh flex-col justify-center px-30 py-14 lg:flex lg:items-center lg:justify-center lg:px-25">
+    <main className="bg-bg align-center xs:px-30 xs:py-14 relative flex min-h-svh flex-col justify-center overflow-hidden px-5 py-5 lg:flex lg:items-center lg:justify-center lg:px-25">
       {showDarkCover && <div className="bg-bg-2 fixed inset-0 z-[100]" />}
       <PageReveal durationMs={400} bgClassName="bg-bg" />
       <div className="animate-page-fade opacity-0 [animation-delay:300ms]">
         <div className="animate-float-up [animation-delay:450ms]">
           <div className="flex w-full flex-col lg:flex-row lg:pr-1 lg:pl-15">
             <div className="lg:w-3/4">
-              <h1 className="font-display text-[clamp(7rem,13vw,13rem)] font-medium tracking-wider">
+              <h1 className="font-display xs:text-[clamp(7rem,13vw,13rem)] text-[clamp(5rem,8vw,9rem)] font-medium tracking-wider">
                 About
               </h1>
-              <h3 className="font-display pt-2 pb-10 text-[clamp(2.5rem,3.5vw,4rem)] leading-snug">
+              <h3 className="font-display xs:text-[clamp(2.5rem,3.5vw,4rem)] pt-2 pb-10 text-[clamp(1.8rem,2.8vw,3.8rem)] leading-snug">
                 I’m Olivia — a software developer, problem solver, and lifelong
                 learner.
               </h3>
@@ -76,7 +75,7 @@ export default function AboutPageClient() {
           information. I thrive when I can combine technical skills, user
           insights, and a bit of creativity to make things work better.
         </TextBlock>
-        <p className="font-display w-auto pt-15 pb-20 text-justify text-[clamp(2rem,2.2vw,2.5rem)] leading-snug lg:w-190 lg:px-15">
+        <p className="font-display xs:text-justify w-auto pt-15 pb-20 text-[clamp(2rem,2.2vw,2.5rem)] leading-snug lg:w-190 lg:px-15">
           “One of my favorite parts of this career is that I’m always learning.
           Technology doesn’t stand still — and neither do I. Every new feature,
           every sprint, every problem to debug is an opportunity to grow, refine
@@ -120,15 +119,14 @@ export default function AboutPageClient() {
             / UI & UX Collaboration (Figma) / Continuous Learning
           </p>
         </div>
-        <div className="mt-15 w-180 lg:px-15">
-          <Link
-            href=""
-            target="_self"
-            rel="noopener noreferrer"
-            className="font-display inline-block rounded-full bg-neutral-900 px-15 py-1 text-[clamp(2rem,3vw,3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
+        <div className="align-center xs:w-180 xs:justify-start mt-15 flex justify-center lg:px-15">
+          <a
+            href="/cv/Olivia_Witt_CV.pdf"
+            download="Olivia_Witt_CV.pdf"
+            className="font-display xs:px-15 inline-block rounded-full bg-neutral-900 px-5 py-1 text-[clamp(2rem,3vw,3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
           >
             My CV
-          </Link>
+          </a>
         </div>
       </div>
     </main>

@@ -15,6 +15,9 @@ const config = {
       animation: {
         ribbonDrop: "ribbonDrop 900ms cubic-bezier(0.22,1,0.36,1) 200ms both",
       },
+      screens: {
+        xs: "550px",
+      },
     },
   },
   plugins: [],

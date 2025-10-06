@@ -24,7 +24,7 @@ export function ButtonBlock({
           href={href}
           target={target}
           rel={target === "_blank" ? "noopener noreferrer" : undefined}
-          className="font-display inline-block rounded-full bg-neutral-900 px-15 py-1 text-[clamp(2rem,3.3vw,3.3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
+          className="font-display xs:px-15 inline-block rounded-full bg-neutral-900 px-10 py-1 text-[clamp(1.5rem,3.3vw,3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
         >
           {text}
         </Link>

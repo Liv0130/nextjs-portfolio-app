@@ -10,12 +10,12 @@ export const metadata = { title: "Greencarlane — Olivia" };
 export default async function GreencarlanePage() {
   return (
     <main className="mx-auto flex min-h-screen flex-col items-center justify-start md:px-20">
-      <div className="animate-reveal-down bg-bg-2 flex h-[750px] w-full flex-col items-center justify-end lg:w-4/5">
-        <h1 className="animate-float-up display-font text-fg-on-dark w-6/7 text-center text-[clamp(8rem,13vw,13rem)] leading-[1] tracking-[.05em] text-balance [animation-delay:600ms] lg:w-3/4 lg:text-[clamp(9rem,14vw,14rem)]">
+      <div className="animate-reveal-down bg-bg-2 xs:h-[750px] xs:justify-end xs:w-full flex h-[600px] flex-col items-center justify-center lg:w-4/5">
+        <h1 className="animate-float-up display-font text-fg-on-dark xs:text-[clamp(8rem,13vw,13rem)] w-6/7 text-center text-[clamp(5.5rem,7vw,10rem)] leading-[1] tracking-[.05em] text-balance [animation-delay:600ms] lg:w-3/4 lg:text-[clamp(9rem,14vw,14rem)]">
           GREEN CAR LANE
         </h1>
       </div>
-      <div className="h-auto w-4/5 pt-40 pb-30">
+      <div className="xs:pt-40 h-auto w-4/5 pt-20 pb-30">
         <p className="display-font mx-auto text-left text-[clamp(2rem,3.5vw,4rem)] lg:px-3">
           Software I built as a frontend developer intern at Greencarlane,
           including the company website and an interactive quiz to help users
@@ -74,13 +74,13 @@ export default async function GreencarlanePage() {
           the work environment pushed me to act like a real developer: 
           collaborating in a startup team, problem-solving, and coding for production."
         />
-        <div className="align-center flex justify-between py-15">
+        <div className="align-center xs:py-15 flex justify-between py-6">
           <Image
             src="/quiz_sub_1.png"
             alt="Quiz Result 1"
             width={300}
             height={300}
-            className="mr-5 w-3/4 max-w-[40vw] rounded-lg shadow-2xl"
+            className="xs:mr-5 w-3/4 max-w-[40vw] rounded-lg shadow-2xl"
           />
           <Image
             src="/quiz_sub_2.png"

@@ -34,7 +34,7 @@ export function ImageBlock({
       </div>
 
       {text && (
-        <p className="max-w-fit py-15 text-justify leading-relaxed tracking-wider lg:px-15">
+        <p className="xs:text-justify xs:py-15 max-w-fit pt-15 pb-5 text-left leading-relaxed tracking-wider lg:px-15">
           {text}
         </p>
       )}

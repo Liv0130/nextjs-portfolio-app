@@ -25,7 +25,7 @@ export default function ContactPageClient() {
   };
 
   return (
-    <main className="bg-bg-2 align-center relative flex min-h-svh flex-col justify-center py-14 pl-15 lg:flex lg:items-center lg:justify-center lg:px-50">
+    <main className="bg-bg-2 align-center xs:pl-15 xs:justify-center relative flex min-h-svh flex-col overflow-hidden py-14 lg:flex lg:items-center lg:justify-center lg:px-50">
       {showDarkCover && <div className="bg-bg fixed inset-0 z-[100]" />}
       <PageReveal durationMs={400} bgClassName="bg-bg-2" />
       <div className="animate-page-fade opacity-0 [animation-delay:300ms]">
@@ -35,7 +35,7 @@ export default function ContactPageClient() {
               <h1 className="font-display text-fg-on-dark text-[clamp(7rem,13vw,13rem)] font-medium tracking-wider">
                 Hej!
               </h1>
-              <h3 className="text-fg-on-dark pt-2 pb-10 text-[clamp(1.6rem,2vw,2.5rem)] leading-snug">
+              <h3 className="text-fg-on-dark pt-2 pb-10 text-[clamp(1.3rem,2vw,2.5rem)] leading-snug">
                 Need a skilled software developer who can deliver modern,
                 scalable solutions? Let’s connect.
               </h3>
