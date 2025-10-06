@@ -8,7 +8,7 @@ type Props = {
   text: string;
   startTop?: number;
   right?: number;
-  easing?: number; // 0.12–0.25
+  easing?: number;
   className?: string;
 };
 
@@ -36,8 +36,8 @@ export function StickyCTA({
     el.style.willChange = "top, opacity, background-color, box-shadow";
     el.style.transition = "background-color 180ms ease, opacity 120ms ease";
 
-    const stillThreshold = 0.35; // px diff considered "stopped"
-    const motionScale = 24; // bigger = less sensitive fading
+    const stillThreshold = 0.35;
+    const motionScale = 24;
 
     const onScrollOrResize = () => {
       targetY.current = startTop + window.scrollY;
@@ -48,7 +48,6 @@ export function StickyCTA({
       const abs = Math.abs(diff);
 
       if (abs < stillThreshold) {
-        // SNAP TO REST: full opacity + normal color
         currentY.current = targetY.current;
         el.style.top = `${currentY.current}px`;
         if (movingRef.current) {
@@ -59,13 +58,11 @@ export function StickyCTA({
         el.style.opacity = "1";
         el.style.boxShadow = "0 10px 30px rgba(0,0,0,0.12)";
       } else {
-        // keep easing toward target
         currentY.current += diff * easing;
         el.style.top = `${currentY.current}px`;
 
-        // weaker while moving
-        const v = Math.min(1, abs / motionScale); // 0..1
-        const opacity = 1 - 0.25 * v; // 1 -> 0.75
+        const v = Math.min(1, abs / motionScale);
+        const opacity = 1 - 0.25 * v;
         el.style.opacity = String(opacity);
 
         if (!movingRef.current) {
@@ -74,7 +71,7 @@ export function StickyCTA({
           movingRef.current = true;
         }
 
-        const shadow = 0.12 + 0.28 * v; // subtle stronger shadow in motion
+        const shadow = 0.12 + 0.28 * v;
         el.style.boxShadow = `0 10px 30px rgba(0,0,0,${shadow})`;
       }
 
@@ -98,9 +95,9 @@ export function StickyCTA({
       ref={ref}
       href={href}
       className={[
-        "pointer-events-auto fixed z-50",
-        "rounded-full px-15 py-3 font-semibold tracking-widest text-white",
-        "bg-black hover:bg-neutral-700", // normal at rest
+        "pointer-events-auto fixed z-50 block [@media(max-width:1130px)]:hidden",
+        "rounded-full px-10 py-3 font-semibold tracking-widest text-white",
+        "bg-bg-2 hover:bg-neutral-700",
         className,
       ].join(" ")}
       style={{ top: startTop, right }}

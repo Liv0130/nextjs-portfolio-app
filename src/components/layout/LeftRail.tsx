@@ -45,7 +45,7 @@ export function LeftRail() {
 
   return (
     <aside
-      className={`${backgroundColor} relative top-0 left-0 z-50 flex h-auto w-full shrink-0 flex-col flex-row items-center justify-between border-0 p-4 pt-5 pb-30 md:fixed md:h-screen md:w-20 md:flex-col md:items-center md:justify-between md:pt-35 md:pb-20`}
+      className={`${backgroundColor} relative top-0 left-0 z-50 flex h-auto w-full shrink-0 flex-col flex-row items-center justify-between border-0 p-4 pt-5 pb-15 md:fixed md:h-screen md:w-20 md:flex-col md:items-center md:justify-between md:pt-35 md:pb-20 md:pb-30`}
     >
       <nav
         className={`${textColor} flex flex-row gap-8 text-[13px] font-normal tracking-widest uppercase md:rotate-[-90deg]`}

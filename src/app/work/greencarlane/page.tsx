@@ -9,14 +9,14 @@ export const metadata = { title: "Greencarlane — Olivia" };
 
 export default async function GreencarlanePage() {
   return (
-    <main className="mx-auto flex min-h-screen flex-col items-center justify-start px-20">
-      <div className="animate-reveal-down bg-bg-2 flex h-[750px] w-4/5 flex-col items-center justify-end">
-        <h1 className="animate-float-up display-font text-fg-on-dark w-3/4 text-center text-[clamp(9rem,14vw,14rem)] leading-[1] tracking-[.05em] text-balance [animation-delay:600ms]">
+    <main className="mx-auto flex min-h-screen flex-col items-center justify-start md:px-20">
+      <div className="animate-reveal-down bg-bg-2 flex h-[750px] w-full flex-col items-center justify-end lg:w-4/5">
+        <h1 className="animate-float-up display-font text-fg-on-dark w-6/7 text-center text-[clamp(8rem,13vw,13rem)] leading-[1] tracking-[.05em] text-balance [animation-delay:600ms] lg:w-3/4 lg:text-[clamp(9rem,14vw,14rem)]">
           GREEN CAR LANE
         </h1>
       </div>
       <div className="h-auto w-4/5 pt-40 pb-30">
-        <p className="display-font mx-auto px-3 text-left text-[clamp(2rem,3.5vw,4rem)]">
+        <p className="display-font mx-auto text-left text-[clamp(2rem,3.5vw,4rem)] lg:px-3">
           Software I built as a frontend developer intern at Greencarlane,
           including the company website and an interactive quiz to help users
           find their ideal electric car.
@@ -26,7 +26,7 @@ export default async function GreencarlanePage() {
             {
               title: "ROLE",
               content: "Frontend Development",
-              className: "ml-8 w-4/5",
+              className: "lg:ml-8 w-4/5",
             },
             {
               title: "RESPONSIBILITIES",
@@ -38,7 +38,7 @@ export default async function GreencarlanePage() {
               title: "URL",
               link: "https://greencarlane.com/",
               extraShortLink: true,
-              className: "ml-8 w-2/3 mr-0",
+              className: "lg:ml-8 w-2/3 mr-0",
             },
           ]}
         />

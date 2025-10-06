@@ -8,14 +8,14 @@ export const metadata = { title: "T2GO — Olivia" };
 
 export default async function T2goPage() {
   return (
-    <main className="mx-auto flex min-h-screen flex-col items-center justify-start px-20">
-      <div className="animate-reveal-down bg-bg-2 flex h-[750px] w-4/5 flex-col items-center justify-end">
+    <main className="mx-auto flex min-h-screen flex-col items-center justify-start md:px-20">
+      <div className="animate-reveal-down bg-bg-2 flex h-[750px] w-full flex-col items-center justify-end lg:w-4/5">
         <h1 className="animate-float-up display-font text-fg-on-dark text-[clamp(9rem,14vw,14rem)] tracking-[.05em] [animation-delay:600ms]">
           T2GO
         </h1>
       </div>
       <div className="h-auto w-4/5 pt-40 pb-30">
-        <p className="display-font mx-auto px-3 text-left text-[clamp(2rem,3.5vw,4rem)]">
+        <p className="display-font mx-auto text-left text-[clamp(2rem,3.5vw,4rem)] lg:px-3">
           Software I developed for Sarsys-ASFT’s T2Go, a Raspberry Pi–based
           system that collects friction data from sensors for use in both
           airports and industrial environments.
@@ -25,7 +25,7 @@ export default async function T2goPage() {
             {
               title: "ROLE",
               content: "Full-Stack Development",
-              className: "ml-8 w-4/5",
+              className: "lg:ml-8 w-4/5",
             },
             {
               title: "RESPONSIBILITIES",
@@ -36,7 +36,7 @@ export default async function T2goPage() {
             {
               title: "URL",
               link: "https://www.sarsys-asft.com/products/t2go",
-              className: "ml-8 w-4/5 mr-5",
+              className: "lg:ml-8 w-4/5 mr-5",
             },
           ]}
         />

@@ -21,7 +21,7 @@ export function ImageBlock({
   text,
 }: Props) {
   return (
-    <div className="flex w-full flex-col items-center justify-center">
+    <div className="flex w-fit flex-col items-center justify-center">
       <div className="align-center flex w-full justify-center pt-10">
         <Image
           src={src}
@@ -29,12 +29,12 @@ export function ImageBlock({
           width={width}
           height={height}
           priority={priority}
-          className={`w-7/8 max-w-[90vw] rounded-lg ${shadow ? "shadow-2xl" : ""}`}
+          className={`w-8/9 max-w-[90vw] rounded-lg ${shadow ? "shadow-2xl" : ""}`}
         />
       </div>
 
       {text && (
-        <p className="max-w-fit px-15 py-15 text-justify leading-relaxed tracking-wider">
+        <p className="max-w-fit py-15 text-justify leading-relaxed tracking-wider lg:px-15">
           {text}
         </p>
       )}

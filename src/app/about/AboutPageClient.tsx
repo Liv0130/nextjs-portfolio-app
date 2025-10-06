@@ -15,13 +15,13 @@ export default function AboutPageClient() {
   }, []);
 
   return (
-    <main className="bg-bg align-center relative flex min-h-svh flex-col justify-center py-14 lg:flex lg:items-center lg:justify-center lg:px-50">
+    <main className="bg-bg align-center relative flex min-h-svh flex-col justify-center px-30 py-14 lg:flex lg:items-center lg:justify-center lg:px-25">
       {showDarkCover && <div className="bg-bg-2 fixed inset-0 z-[100]" />}
       <PageReveal durationMs={400} bgClassName="bg-bg" />
       <div className="animate-page-fade opacity-0 [animation-delay:300ms]">
         <div className="animate-float-up [animation-delay:450ms]">
-          <div className="flex w-full pr-1 pl-15">
-            <div className="w-3/4">
+          <div className="flex w-full flex-col lg:flex-row lg:pr-1 lg:pl-15">
+            <div className="lg:w-3/4">
               <h1 className="font-display text-[clamp(7rem,13vw,13rem)] font-medium tracking-wider">
                 About
               </h1>
@@ -30,20 +30,21 @@ export default function AboutPageClient() {
                 learner.
               </h3>
             </div>
-            <div className="mt-10 ml-20 lg:mt-20">
+            <div className="mx-auto my-3 lg:mt-20">
               <Image
                 src="/olivia.jpg"
                 alt="Olivia"
                 width={300}
                 height={300}
-                className="w-70 max-w-[90vw] rounded-full"
+                priority
+                className="w-50 max-w-[50vw] rounded-full lg:w-70"
               />
             </div>
             <StickyCTA
               href="/contact"
               text="CONTACT"
-              startTop={600}
-              right={30}
+              startTop={650}
+              right={60}
               easing={0.2}
             />
           </div>
@@ -75,13 +76,13 @@ export default function AboutPageClient() {
           information. I thrive when I can combine technical skills, user
           insights, and a bit of creativity to make things work better.
         </TextBlock>
-        <p className="font-display w-190 px-15 pt-15 pb-20 text-justify text-[clamp(2rem,2.2vw,2.5rem)] leading-snug">
+        <p className="font-display w-auto pt-15 pb-20 text-justify text-[clamp(2rem,2.2vw,2.5rem)] leading-snug lg:w-190 lg:px-15">
           “One of my favorite parts of this career is that I’m always learning.
           Technology doesn’t stand still — and neither do I. Every new feature,
           every sprint, every problem to debug is an opportunity to grow, refine
           my craft, and push the boundary of what I can do.”
         </p>
-        <div className="w-180 px-15">
+        <div className="w-auto lg:w-180 lg:px-15">
           <span className="font-display text-[clamp(1.2rem,1.6vw,1.8rem)]">
             Experience
           </span>
@@ -109,7 +110,7 @@ export default function AboutPageClient() {
             <li>Collaboration across hardware, sales, and customer teams</li>
           </ul>
         </div>
-        <div className="mt-15 w-180 px-15">
+        <div className="mt-15 w-auto lg:w-180 lg:px-15">
           <span className="font-display text-[clamp(1.2rem,1.6vw,1.8rem)]">
             Skills
           </span>
@@ -119,12 +120,12 @@ export default function AboutPageClient() {
             / UI & UX Collaboration (Figma) / Continuous Learning
           </p>
         </div>
-        <div className="mt-15 w-180 px-15">
+        <div className="mt-15 w-180 lg:px-15">
           <Link
             href=""
             target="_self"
             rel="noopener noreferrer"
-            className="font-display inline-block rounded-full bg-neutral-900 px-15 py-1 text-[clamp(2rem,3.3vw,3.3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
+            className="font-display inline-block rounded-full bg-neutral-900 px-15 py-1 text-[clamp(2rem,3vw,3rem)] font-medium tracking-widest text-white transition-all duration-200 hover:bg-neutral-700"
           >
             My CV
           </Link>

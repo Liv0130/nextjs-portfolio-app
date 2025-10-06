@@ -8,7 +8,7 @@ type Props = {
 export function TextBlock({ children, className = "" }: Props) {
   return (
     <p
-      className={`max-w-fit px-15 py-5 text-justify leading-relaxed tracking-wider ${className}`}
+      className={`max-w-fit py-5 text-justify leading-relaxed tracking-wider lg:px-15 ${className}`}
     >
       {children}
     </p>
