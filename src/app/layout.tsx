@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/global.css";
 import { Tenor_Sans, Montserrat } from "next/font/google";
 import { LeftRail } from "@/components/layout/LeftRail";
+import { ScrollToTopButton } from "@/components/fx/ScrollToTopButton";
 
 export const metadata: Metadata = {
   title: "Olivia — Portfolio",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body>
         <LeftRail />
         <div>{children}</div>
+        <ScrollToTopButton />
       </body>
     </html>
   );
