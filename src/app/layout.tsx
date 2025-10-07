@@ -7,7 +7,31 @@ import { ScrollToTopButton } from "@/components/fx/ScrollToTopButton";
 
 export const metadata: Metadata = {
   title: "Olivia — Portfolio",
-  description: "Full-stack developer portfolio",
+  description: "Software developer portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Olivia Witt — Portfolio",
+    description: "Creative Software Developer based in Sweden",
+    url: "https://nextjs-portfolio-app-kappa.vercel.app/",
+    siteName: "Olivia Witt",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Olivia Witt Portfolio Preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Olivia Witt — Portfolio",
+    description: "Software Developer",
+    images: ["/og.png"],
+  },
 };
 
 const tenor = Tenor_Sans({
