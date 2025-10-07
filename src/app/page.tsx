@@ -14,7 +14,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="lg:bg-bg-2 md:bg-bg xs:min-h-svh relative overflow-hidden pt-5 pb-15 text-neutral-900">
+    <div className="lg:bg-bg-2 md:bg-bg xs:min-h-svh relative overflow-hidden pt-5 pb-15 text-neutral-900 sm:py-0">
       {/* Page reveal animation */}
       {showBrightCover && <div className="bg-bg-2 fixed inset-0 z-[100]" />}
       <PageReveal
