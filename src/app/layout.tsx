@@ -6,6 +6,7 @@ import { LeftRail } from "@/components/layout/LeftRail";
 import { ScrollToTopButton } from "@/components/fx/ScrollToTopButton";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nextjs-portfolio-app-kappa.vercel.app"),
   title: "Olivia — Portfolio",
   description: "Software developer portfolio",
   icons: {
