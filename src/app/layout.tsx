@@ -1,5 +1,5 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "@/styles/global.css";
 import { Tenor_Sans, Montserrat } from "next/font/google";
 import { LeftRail } from "@/components/layout/LeftRail";
@@ -56,6 +56,7 @@ export default function RootLayout({
         <LeftRail />
         <div>{children}</div>
         <ScrollToTopButton />
+        <Analytics />
       </body>
     </html>
   );
